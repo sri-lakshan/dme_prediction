@@ -51,9 +51,9 @@ Please ensure you comply with the dataset's usage terms and conditions as specif
 1. **Images**: Place your retinal fundus images in the designated folder (e.g., `data/images/`).
 
 2. **CSV Files**: You can use `traintestsplit.py` under utils/ in order to split the data into training and validation sets. Create two CSV files named `train_data.csv` and `val_data.csv` in the `data/` directory. Each file should include the following columns:
-   - `image_path`: Relative path to the image file.
-   - `retinopathy_grade`: The DR grade, represented as an integer (0, 1, 2, 3, or 4).
-   - `dme`: The DME label (0 for No DME, 1 for DME).
+   - `id_code`: Relative path to the image file.
+   - `diagnosis`: The DR grade, represented as an integer (0, 1, 2, 3, or 4).
+   - `adjudicated_dme`: The DME label (0 for No DME, 1 for DME).
 
 ## Training the Model
 
